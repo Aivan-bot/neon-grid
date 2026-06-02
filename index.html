@@ -266,7 +266,7 @@
         for (const [dr, dc] of DIRS) {
           if (flipCount(r, c, dr, dc, player) > 0) {
             moves.push([r, c]);
-            return moves; // at least one valid direction
+            break; // found at least one direction for this cell
           }
         }
       }
